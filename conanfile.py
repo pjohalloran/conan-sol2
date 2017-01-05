@@ -10,7 +10,7 @@ class SolTwoConan(ConanFile):
 
   def source(self):
     sol_filename = "sol.hpp"
-    sol_url = "https://github.com/ThePhD/sol2/releases/download/v{}/{}".format(version, sol_filename)
+    sol_url = "https://github.com/ThePhD/sol2/releases/download/v2.16.6/{}".format(sol_filename)
     tools.download(sol_url, sol_filename)
 
   def build(self):
