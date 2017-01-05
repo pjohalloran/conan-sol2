@@ -1,4 +1,4 @@
-from conans import ConanFile, CMake
+from conans import ConanFile, CMake, tools
    
 class SolTwoConan(ConanFile):
   name = "sol2"
