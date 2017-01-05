@@ -18,4 +18,4 @@ class SolTwoConan(ConanFile):
 
   def package(self):
     sol_filename = "sol.hpp"
-    self.copy(sol_filename, dst="include", src=sol_filename)
+    self.copy(sol_filename, dst="include")
