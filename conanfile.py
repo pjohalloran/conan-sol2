@@ -9,13 +9,11 @@ class SolTwoConan(ConanFile):
   url = "https://github.com/pjohalloran/conan-sol2"
 
   def source(self):
-    sol_filename = "sol.hpp"
-    sol_url = "https://github.com/ThePhD/sol2/releases/download/v2.15.6/{}".format(sol_filename)
+    sol_url = "https://github.com/ThePhD/sol2/releases/download/v%s/%s" % (self.version, "sol.hpp")
     tools.download(sol_url, sol_filename)
 
   def build(self):
        return
 
   def package(self):
-    sol_filename = "sol.hpp"
-    self.copy(sol_filename, dst="include")
+    self.copy("sol.hpp", dst="include")
